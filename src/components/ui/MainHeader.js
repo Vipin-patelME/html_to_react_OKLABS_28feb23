@@ -1,116 +1,131 @@
 import React from 'react'
+import MainHeader from './MainHeader'
 
-export default function MainHeader() {
+export default function Header() {
     return (
         <>
-            <section id="toolbar">
-                <div className="container_12">
-                <div className="left">
-                    <ul className="breadcrumb">
-                    <li><a href="dashboard.html">Mango</a></li>
-                    <li><a href="javascript:void(0);">Dashboard</a></li>
+            <MainHeader />
+            <section className="toolbar">
+                <div className="user">
+                    <div className="avatar">
+                        <img src="img/layout/content/toolbar/user/avatar.png" />
+                        <span>3</span>
+                    </div>
+                    <span>Administrator</span>
+                    <ul>
+                        <li><a href="javascript:$$.settings();">Settings</a></li>
+                        <li><a href="pages_profile.html">Profile</a></li>
+                        <li className="line" />
+                        <li><a href="login.html">Logout</a></li>
                     </ul>
                 </div>
-                <div className="right">
-                    <ul>
-                    <li><a href="pages_profile.html"><span className="icon i14_admin-user" />Profile</a></li>
+                <ul className="shortcuts">
                     <li>
-                        <a href="#"><span>3</span>Messages</a>
-                        <div className="popup">
-                        <h3>New Messages</h3>
-                        <a className="button flat left grey" onclick="$(this).parent().fadeToggle($$.config.fxSpeed)">Close</a>
-                        <a className="button flat right" href="tables_dynamic.html">Inbox</a>
-                        <div className="content mail">
-                            <ul>
-                            <li>
-                                <div className="avatar">
-                                <img src="img/elements/mail/avatar.png" height={40} width="40/" />
+                        <a href="javascript:void(0);"><span className="icon i24_user-business" /></a>
+                        <div className="small">
+                            <h3>Create a User</h3>
+                            <button className="button flat left grey" onclick="$(this).parent().fadeToggle($$.config.fxSpeed).parent().removeClass('active')">Close</button>
+                            <button className="button flat right" onclick="$(this).parent().fadeToggle($$.config.fxSpeed).parent().removeClass('active')">Create</button>
+                            <div className="content">
+                            <form className="full grid">
+                                <div className="row no-bg">
+                                <p className="_100 small">
+                                    <label htmlFor="p1_username">Username</label>
+                                    <input type="text" name="p1_username" id="p1_username" />
+                                </p>
                                 </div>
-                                <div className="info">
-                                <strong>John Doe</strong>
-                                <span>Thanks for your theme!</span>
-                                <small>09:32 am</small>
+                                <div className="row no-bg">
+                                <p className="_50 small">
+                                    <label htmlFor="p1_firstname">Firstname</label>
+                                    <input type="text" name="p1_firstname" id="p1_firstname" />
+                                </p>
+                                <p className="_50 small">
+                                    <label htmlFor="p1_lastname">Lastname</label>
+                                    <input type="text" name="p1_lastname" id="p1_lastname" />
+                                </p>
                                 </div>
-                                <div className="text">
-                                <p>Hey Admin!</p>
-                                <p>I've purchased your admin template and it's great :)</p>
-                                <p>A happy customer</p>
-                                <div className="actions">
-                                    <a href="javascript:void(0);" className="left open-message-dialog">Reply</a>
-                                    <a onclick="$(this).parent().parent().parent().slideToggle($$.config.fxSpeed)" className="red right" href="javascript:void(0);">Delete</a>
-                                </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="avatar">
-                                <img src="img/elements/mail/mail.png" height={40} width="40/" />
-                                </div>
-                                <div className="info">
-                                <strong>System</strong>
-                                <span>New comment</span>
-                                <small>08:47 am</small>
-                                </div>
-                                <div className="text">
-                                <p>Hello,</p>
-                                <p>There is one new comment on your theme.</p>
-                                <p>Go to Comments page to see it.</p>
-                                <div className="actions">
-                                    <a href="javascript:void(0);" className="left open-message-dialog">Reply</a>
-                                    <a onclick="$(this).parent().parent().parent().slideToggle($$.config.fxSpeed)" className="red right" href="javascript:void(0);">Delete</a>
-                                </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="avatar">
-                                <img src="img/elements/mail/mail.png" height={40} width="40/" />
-                                </div>
-                                <div className="info">
-                                <strong>Stranger</strong>
-                                <span>[SPAM] ---</span>
-                                <small>Yesterday</small>
-                                </div>
-                                <div className="text">
-                                <p>[...]</p>
-                                <div className="actions">
-                                    <a href="javascript:void(0);" className="left open-message-dialog">Read</a>
-                                    <a onclick="$(this).parent().parent().parent().slideToggle($$.config.fxSpeed)" className="red right" href="javascript:void(0);">Delete</a>
-                                </div>
-                                </div>
-                            </li>
-                            </ul>
-                        </div>
+                            </form>
+                            </div>
                         </div>
                     </li>
-                    <li className="space" />
-                    <li><a href="javascript:void(0);" id="btn-lock"><span>--:--</span>Lock screen</a></li>
-                    <li className="red"><a href="login.html">Logout</a></li>
-                    </ul>
-                </div>
-                <div className="phone">
-                    <li><a href="pages_profile.html"><span className="icon icon-user" /></a></li>
-                    
-                    <li><a className="navigation" href="#"><span className="icon icon-list" /></a></li>
-                </div>
-                </div>
+                    <li>
+                        <a href="javascript:void(0);"><span className="icon i24_inbox-document" /></a>
+                        <div className="small">
+                            <h3>Write a Message</h3>
+                            <button className="button flat left grey" onclick="$(this).parent().fadeToggle($$.config.fxSpeed).parent().removeClass('active')">Close</button>
+                            <button className="button flat right" onclick="$(this).parent().fadeToggle($$.config.fxSpeed).parent().removeClass('active')">Send</button>
+                            <div className="content">
+                            <form className="full grid">
+                                <div className="row no-bg">
+                                <p className="_100 small">
+                                    <input type="text" name="p2_recipient" id="p2_recipient" placeholder="Recipient" />
+                                </p>
+                                <p className="_100 small">
+                                    <input type="text" name="p2_subject" id="p2_subject" placeholder="Subject" />
+                                </p>
+                                <p className="_100 small">
+                                    <textarea rows={3} className="full-width" name="p2_message" id="p2_message" placeholder="Message" defaultValue={""} />
+                                </p>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);"><span className="icon i24_calendar" /></a>
+                        <div className="small">
+                            <h3>Write a Message</h3>
+                            <button className="button flat left grey" onclick="$(this).parent().fadeToggle($$.config.fxSpeed).parent().removeClass('active')">Close</button>
+                            <button className="button flat right" onclick="$(this).parent().fadeToggle($$.config.fxSpeed).parent().removeClass('active')">Send</button>
+                            <div className="content">
+                            <form className="full grid">
+                                <div className="row no-bg">
+                                <p className="_100 small">
+                                    <label htmlFor="p3_recipient" className="inline">Recipent</label>
+                                    <input type="text" name="p3_recipient" id="p3_recipient" />
+                                </p>
+                                <p className="_100 small">
+                                    <label htmlFor="p3_subject" className="inline">Subject</label>
+                                    <input type="text" name="p3_subject" id="p3_subject" />
+                                </p>
+                                <p className="_100 small">
+                                    <label htmlFor="p3_message">Message</label>
+                                    <textarea rows={3} className="full-width" name="p3_message" id="p3_message" defaultValue={""} />
+                                </p>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);"><span className="icon i24_application-blue" /></a>
+                        
+                        <div className="small">
+                            <h3>Information</h3>
+                            <button className="button flat left grey" onclick="$(this).parent().fadeToggle($$.config.fxSpeed).parent().removeClass('active')">Close</button>
+                            <div className="content">
+                            <form className="full grid">
+                                <div className="row no-bg">
+                                <p className="_100 small">
+                                    <label htmlFor="p3_recipient">Priority</label>
+                                    <select name="p4_priority" id="p4_priority">
+                                    <option value={0}>low</option>
+                                    <option value={1}>medium</option>
+                                    <option value={2}>high</option>
+                                    </select>
+                                </p>
+                                <p className="_100 small">
+                                    <textarea rows={3} className="full-width" name="p4_question" id="p4_question" placeholder="Question" defaultValue={""} />
+                                </p>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <input type="search" data-source="extras/search.php" placeholder="Search..." autoComplete="off" className="tooltip" title="e.g. Peach" data-gravity="s" />
             </section>
-            <header className="container_12">
-                <a href="dashboard.html"><img src="img/logo.png" alt="Mango" width={191} height={60} /></a>
-                <a className="phone-title" href="dashboard.html"><img src="img/logo-mobile.png" alt="Mango" height={22} width={70} /></a>
-                <div className="buttons">
-                    <a href="statistics.html">
-                        <span className="icon icon-sitemap" />
-                        Statistics
-                    </a>
-                    <a href="forms.html">
-                        <span className="icon icon-list-alt" />
-                        Forms
-                    </a>
-                    <a href="tables_dynamic.html">
-                        <span className="icon icon-table" />
-                        Tables
-                    </a>
-                </div>
-            </header>
+
         </>
     )
 }

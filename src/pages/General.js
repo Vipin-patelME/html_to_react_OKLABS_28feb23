@@ -458,7 +458,7 @@ export default function General() {
                     </div>
                     <div className="alert success">
                     <span className="icon" />
-                    <strong>Success!</strong> Now it's working :)
+                    <strong>Success!</strong> Now it's working :
                     </div>
                     <div className="alert warning">
                     <span className="icon" />
@@ -490,7 +490,7 @@ export default function General() {
                         </div>
                         <div className="alert success">
                         <span className="icon" />
-                        <strong>Success!</strong> Now it's working :)
+                        <strong>Success!</strong> Now it's working :
                         </div>
                         <div className="alert warning">
                         <span className="icon" />
@@ -523,7 +523,7 @@ export default function General() {
                         </div>
                         <div className="alert success sticky no-margin">
                         <span className="icon" />
-                        <strong>Success!</strong> Now it's working :)
+                        <strong>Success!</strong> Now it's working :
                         </div>
                         <div className="alert warning sticky no-margin">
                         <span className="icon" />

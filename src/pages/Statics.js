@@ -15,13 +15,12 @@ export default function Statics() {
                     <div className="full-stats">
                     <div className="stat simple" data-value={0} data-title="Orders" data-format={0} />
                     </div>
-                </div>{/* End of .grid_12 */}
+                </div>
                 <div className="grid_12 center-elements">
                     <div className="full-stats">
                     <div className="stat hlist" data-list="[{&quot;val&quot;:17621,&quot;format&quot;:&quot;$0,0;-$0,0&quot;,&quot;title&quot;:&quot;already paid&quot;,&quot;color&quot;:&quot;green&quot;},{&quot;val&quot;:1125,&quot;format&quot;:&quot;$0,0;-$0,0&quot;,&quot;title&quot;:&quot;not paid yet&quot;,&quot;color&quot;:&quot;red&quot;},{&quot;val&quot;:18746,&quot;format&quot;:&quot;$0,0;-$0,0&quot;,&quot;title&quot;:&quot;total taxes&quot;}]" />
                     </div>
-                </div>{/* End of .grid_12 */}
-                {/* IE8 hates canvas */}
+                </div>
                 <div className="grid_12 center-elements">
                     <div className="full-stats">
                     <div className="stat minichart" data-total={16525} data-values="[4,6,7,7,4,3,2,1,4]" data-title="Visits" data-format="+0,0;-0,0" data-change={22} />
@@ -32,7 +31,7 @@ export default function Statics() {
                     <div className="full-stats">
                     <div className="stat minichart" data-total={0} data-values="[0,0,0,1,2,1,-2,-2,-1]" data-title="Orders" data-change={0} />
                     </div>
-                </div>{/* End of .grid_12 */}
+                </div>
                 <h1 className="grid_12">Circular Statistics</h1>
                 <div className="grid_12 center-elements">
                     <div className="full-stats">
