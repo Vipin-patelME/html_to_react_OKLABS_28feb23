@@ -3,6 +3,10 @@ import React from 'react'
 export default function Login() {
   return (
     <>
+        <div id="loading-overlay"></div>
+        <div id="loading">
+            <span>Loading...</span>
+        </div>
         <section id="toolbar">
             <div className="container_12">
             <div className="left">
