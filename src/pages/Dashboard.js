@@ -301,7 +301,7 @@ export default function Dashboard() {
                     </div>{/* End of .content */}
                     </div>{/* End of .box */}
                 </div>{/* End of .grid_12 */}
-                </section>
+            </section>
 
         </>
     )

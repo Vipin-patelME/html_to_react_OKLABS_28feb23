@@ -60,7 +60,7 @@ export default function Login() {
                 <div className="row">
                     <label htmlFor="login_pw">
                     <strong>Password</strong>
-                    <small><a href="javascript:void(0);" id>Forgot it?</a></small>
+                    <small><a href="javascript:void(0);" id = "">Forgot it?</a></small>
                     </label>
                     <div>
                     <input tabIndex={2} type="password" className="required" name="login_pw" id="login_pw" />

@@ -42,7 +42,7 @@ export default function Aside() {
                                 </ul>
                             </li>
                             <li>
-                                <Link to='/others'><img src="img/icons/packs/fugue/16x16/document-horizontal.png" alt height={16} width={16} />Other Pages</Link>
+                                <Link to='/otherpages'><img src="img/icons/packs/fugue/16x16/document-horizontal.png" alt height={16} width={16} />Other Pages</Link>
                                 <ul>
                                     <li><a href="login.html">Login</a></li>
                                     <li><a href="pages_profile.html">Profile</a></li>
