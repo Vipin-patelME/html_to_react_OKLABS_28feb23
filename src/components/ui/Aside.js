@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import React from 'react'
 
 export default function Aside() {
@@ -7,9 +8,9 @@ export default function Aside() {
                 <div className="top">
                     <nav>
                         <ul className="collapsible accordion">
-                            <li className="current"><a href="dashboard.html"><img src="img/icons/packs/fugue/16x16/dashboard.png" alt height={16} width={16} />Dashboard</a></li>
+                            <li className="current"><Link to="/"><img src="img/icons/packs/fugue/16x16/dashboard.png" alt height={16} width={16} />Dashboard</Link></li>
                             <li>
-                                <a href="javascript:void(0);"><img src="img/icons/packs/fugue/16x16/ui-layered-pane.png" alt height={16} width={16} />UI Widgets<span className="badge">4</span></a>
+                                <Link to="/general"><img src="img/icons/packs/fugue/16x16/ui-layered-pane.png" alt height={16} width={16} />UI Widgets<span className="badge">4</span></Link>
                                 <ul>
                                     <li><a href="ui_general.html"><span className="icon icon-list" />General</a></li>
                                     <li><a href="ui_extras.html"><span className="icon icon-cog" />Extras</a></li>
@@ -18,7 +19,7 @@ export default function Aside() {
                                 </ul>
                             </li>
                             <li>
-                                <a href="javascript:void(0);"><img src="img/icons/packs/fugue/16x16/application-form.png" alt height={16} width={16} />Form Elements</a>
+                                <Link to="/forms"><img src="img/icons/packs/fugue/16x16/application-form.png" alt height={16} width={16} />Form Elements</Link>
                                 <ul>
                                     <li><a href="forms.html"><span className="icon icon-list-alt" />General</a></li>
                                     <li><a href="forms_validation.html"><span className="icon icon-warning-sign" />Validation</a></li>
@@ -26,14 +27,14 @@ export default function Aside() {
                                 </ul>
                             </li>
                             <li>
-                                <a href="javascript:void(0);"><img src="img/icons/packs/fugue/16x16/chart.png" alt height={16} width={16} />Statistics / Charts<span className="badge">2</span></a>
+                                <Link to="/statics"><img src="img/icons/packs/fugue/16x16/chart.png" alt height={16} width={16} />Statistics / Charts<span className="badge">2</span></Link>
                                 <ul>
                                     <li><a href="statistics.html"><span className="icon icon-sitemap" />Statistics Elements</a></li>
                                     <li><a href="charts.html"><span className="icon icon-bar-chart" />Charts</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="javascript:void(0);"><img src="img/icons/packs/fugue/16x16/table.png" alt height={16} width={16} />Tables</a>
+                                <Link to='/tables'><img src="img/icons/packs/fugue/16x16/table.png" alt height={16} width={16} />Tables</Link>
                                 <ul>
                                     <li><a href="tables_static.html"><span className="icon icon-check-empty" />Static</a></li>
                                     <li><a href="tables_dynamic.html"><span className="icon icon-table" />Dynamic</a></li>
@@ -41,7 +42,7 @@ export default function Aside() {
                                 </ul>
                             </li>
                             <li>
-                                <a href="javascript:void(0);"><img src="img/icons/packs/fugue/16x16/document-horizontal.png" alt height={16} width={16} />Other Pages</a>
+                                <Link to='/others'><img src="img/icons/packs/fugue/16x16/document-horizontal.png" alt height={16} width={16} />Other Pages</Link>
                                 <ul>
                                     <li><a href="login.html">Login</a></li>
                                     <li><a href="pages_profile.html">Profile</a></li>
